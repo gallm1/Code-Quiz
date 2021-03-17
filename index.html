@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+    <div id="container">
+        <!-- Begin -->
+        <div id="begin">Begin Quiz</div>
+        <!-- Rule-book -->
+        <div id="rule-book">
+            <h2>Code Quiz Rules</h2>
+            <h4>1.  The quiz is multiple choice and you have 60 seconds to complete it.</h4>
+            <h4>2.  If you answer incorrectly, 5 seconds will be deducted from time.</h4>
+            <h4>3.  Game is over when all questions are answered or the timer ends.</h4>
+            <h4>4.  You can save your high score when the game is over.</h4>
+            <div id="button">
+                <button id="exit">Exit</button>
+                <button id="continue">Continue</button>
+            </div>
+        </div>
+    </div>
+        <!-- Quiz section -->
+    <div id="quiz">
+        <div id="quiz-header">
+            <h5>The Code Quiz</h5>
+            <div id="timer">
+                <h6>Time Left</h6>
+                <h6 id="time">00</h6>
+            </div> 
+        </div>
+        <!-- Quiz Questions -->
+        <div id="question">
+            <h2 id="quesionNo">1. </h2>
+            <h2 id="questionText">HTML handles which aspect of a webpage?</h2>
+        </div>
+        <!-- Quiz Choices -->
+        <div id="multiple-choice">
+            <h4 class="choices" id="option1">Style Only</h4>
+            <h4 class="choices" id="option2">Structure</h4>
+            <h4 class="choices" id="option3">Processes Only</h4>
+            <h4 class="choices" id="option4">Nothing</h4>
+        </div>
+        <!-- Results -->
+        <div id="result">
+            <h6>Final Score</h6>
+            <h6 id="score">Points</h6>
+            <button id="log-score">Log Score</button>
+            <button id="startAgain">Start Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
